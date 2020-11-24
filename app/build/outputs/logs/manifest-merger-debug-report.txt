@@ -1,0 +1,356 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:2:1-35:12
+MERGED from [io.realm:realm-android-library:6.0.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\a41971a4f9ddbcde84a8748d73e78cf8\jetified-realm-android-library-6.0.2\AndroidManifest.xml:2:1-10:12
+MERGED from [io.realm:realm-android-kotlin-extensions:6.0.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\18e425ca2ce225863f279bfd5142c2e3\jetified-realm-android-kotlin-extensions-6.0.2\AndroidManifest.xml:2:1-10:12
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\71ecd26d29a900f17d398d3f54575ec4\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\047bb4098e2a4a4d05a33a1ccf443143\navigation-ui-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\26d54acbe2dc094b45a28745c9638c1d\navigation-ui-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\03020fecc676fc6b913c6a6cf0121dac\material-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7c7e25a8ce9ae860285adbdb6809d294\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.preference:preference:1.1.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\dc0bcf8cc56f43068faafc2b85b8bddf\preference-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\b7cb1742c1b269fcfa7651af68330dbb\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4cd872bb28007d48d274f59e74488f52\navigation-fragment-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\c9ad360e8c31bc777b4a45197918e2c5\jetified-fragment-ktx-1.2.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\aeed558c3d6ac65b8d2a12b0e303d939\navigation-runtime-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\71431011403bf2aeaf4c61b280ec3ffa\navigation-common-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\81987bb492232474e1ff17db419b2119\jetified-activity-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.3.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\d0644ee4d5c3a9bc00a7daf6120ff836\jetified-core-ktx-1.3.2\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\ddd3bc515528733b28db1e9426250638\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\52d2e4c79ad933c9a6f2812a04f3a984\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\2f5712bb1ea083d419241555960d414e\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\ee0fbcf58fd107adf088e8e38e05b612\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7de11a20aca504d0f4d05c9409306e37\navigation-fragment-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\08f4dbd112e242ba84776b6b1311f078\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4366998089751acb3212fd3fed46f792\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\8b62ebaa78a945e4fb66eaea0ff3805a\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\f3472c4ff942bb2514933c395b85d620\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\da03e5d3574ffce55b32dacf813c906b\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-location:17.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\42fcc73b4e749ce03edeb503f5134e26\jetified-play-services-location-17.1.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\63d1772581a798a352b5dbfc52458bc2\jetified-relinker-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\39f77b88a89f9a1811ed784a76fcb771\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\572dc33869e9ba135f7c789eebb587b6\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\9bc300b97da9fcf72977fc0b380701ec\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\badfa1ec3a8799a7b5ed19fa1e293d1f\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\589cf6078fa56c45d2187cc01adb1f70\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\2118cdaf89a5e045e6100c9eaa0941bf\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4f7f1721ae8619b44c2fe30baf0818fe\jetified-play-services-base-17.3.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\5e6b788bd1ccc685a945fb74d14b531c\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:17.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\aad4fb6ef9c26fcbf635358e016e9176\jetified-play-services-tasks-17.1.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\851078204df5150a1880fecebd46e082\jetified-play-services-basement-17.3.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\fa9e8757704a461b5dfc3e6f053246af\fragment-1.2.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\cd5ee176270a8e415cf299c762af6399\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\bb70640a0640c0794dd1c71bb87d9afe\transition-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\aaef7a5342ac147a4e1c3bc9a317fc17\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\d171d44fd397d1d33aefdc5e78eba7b0\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\72474bd07c3150ed19d8a4b6d192bbc7\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\3bb60fc885a649f92b76e1d3a449b151\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4ac660b932405275c4fc734a16352a74\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\740dd4b63fd3225a9336256185df7d2e\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7272d0232e3b614beb534c1d51506f5b\navigation-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\0c5e9de9948f24672acfe8b4737ffe61\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\1eefed802e56962cf4ee4fd6e763f3c6\navigation-common-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\1e563c1c8ecd635a98430e829691076e\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\c623737eec68f5bf8f604f5122d56503\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\ce24a8565cb066359d524a3bcbd68f26\core-1.3.2\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\36764c8b21d09183d4e22f3df087d597\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\05f07c21dafb76703b40a511cd883c5e\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\01ea44f8b0acc24a469769392b0b1604\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\2b14975756ea811e9d97b5c95d96a640\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\b9ee36351dfadc1f1092c7ba6a262fb6\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\b36bd37585d64fdb96aab3933cc2565c\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\a453291e1a5500f6228a6515f08c5bdd\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\d4d98ad9878600b55ca7bbf815c452aa\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\2adfd1af7d904465e5762c3284187a22\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\671f80971726297b19e4583162a87006\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\0fd435bdec4de7c5b649fd87929c0764\jetified-gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7e13ecdae31ab14de2c2b0cdddcdcbe2\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\13538c5dd1c7441d97b443122a0e0fb8\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\5f499710b4716c54ef0465c6893d99cc\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\6c587b770f4729eb40eafa56191b19a7\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\be0d46a6efa58ed1f486222723c79258\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\63e01300dd87ab74a86ffa2fcd509412\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:2:1-35:12
+	package
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:3:5-47
+		INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:5:5-44
+INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:5:5-44
+INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:5:5-44
+MERGED from [io.realm:realm-android-library:6.0.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\a41971a4f9ddbcde84a8748d73e78cf8\jetified-realm-android-library-6.0.2\AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-library:6.0.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\a41971a4f9ddbcde84a8748d73e78cf8\jetified-realm-android-library-6.0.2\AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-kotlin-extensions:6.0.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\18e425ca2ce225863f279bfd5142c2e3\jetified-realm-android-kotlin-extensions-6.0.2\AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-kotlin-extensions:6.0.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\18e425ca2ce225863f279bfd5142c2e3\jetified-realm-android-kotlin-extensions-6.0.2\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\71ecd26d29a900f17d398d3f54575ec4\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\71ecd26d29a900f17d398d3f54575ec4\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\047bb4098e2a4a4d05a33a1ccf443143\navigation-ui-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\047bb4098e2a4a4d05a33a1ccf443143\navigation-ui-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\26d54acbe2dc094b45a28745c9638c1d\navigation-ui-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\26d54acbe2dc094b45a28745c9638c1d\navigation-ui-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\03020fecc676fc6b913c6a6cf0121dac\material-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\03020fecc676fc6b913c6a6cf0121dac\material-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7c7e25a8ce9ae860285adbdb6809d294\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7c7e25a8ce9ae860285adbdb6809d294\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.preference:preference:1.1.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\dc0bcf8cc56f43068faafc2b85b8bddf\preference-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference:1.1.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\dc0bcf8cc56f43068faafc2b85b8bddf\preference-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\b7cb1742c1b269fcfa7651af68330dbb\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\b7cb1742c1b269fcfa7651af68330dbb\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4cd872bb28007d48d274f59e74488f52\navigation-fragment-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4cd872bb28007d48d274f59e74488f52\navigation-fragment-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\c9ad360e8c31bc777b4a45197918e2c5\jetified-fragment-ktx-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\c9ad360e8c31bc777b4a45197918e2c5\jetified-fragment-ktx-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\aeed558c3d6ac65b8d2a12b0e303d939\navigation-runtime-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\aeed558c3d6ac65b8d2a12b0e303d939\navigation-runtime-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\71431011403bf2aeaf4c61b280ec3ffa\navigation-common-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\71431011403bf2aeaf4c61b280ec3ffa\navigation-common-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\81987bb492232474e1ff17db419b2119\jetified-activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\81987bb492232474e1ff17db419b2119\jetified-activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.3.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\d0644ee4d5c3a9bc00a7daf6120ff836\jetified-core-ktx-1.3.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\d0644ee4d5c3a9bc00a7daf6120ff836\jetified-core-ktx-1.3.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\ddd3bc515528733b28db1e9426250638\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\ddd3bc515528733b28db1e9426250638\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\52d2e4c79ad933c9a6f2812a04f3a984\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\52d2e4c79ad933c9a6f2812a04f3a984\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\2f5712bb1ea083d419241555960d414e\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\2f5712bb1ea083d419241555960d414e\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\ee0fbcf58fd107adf088e8e38e05b612\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\ee0fbcf58fd107adf088e8e38e05b612\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7de11a20aca504d0f4d05c9409306e37\navigation-fragment-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7de11a20aca504d0f4d05c9409306e37\navigation-fragment-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\08f4dbd112e242ba84776b6b1311f078\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\08f4dbd112e242ba84776b6b1311f078\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4366998089751acb3212fd3fed46f792\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4366998089751acb3212fd3fed46f792\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\8b62ebaa78a945e4fb66eaea0ff3805a\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\8b62ebaa78a945e4fb66eaea0ff3805a\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\f3472c4ff942bb2514933c395b85d620\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\f3472c4ff942bb2514933c395b85d620\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\da03e5d3574ffce55b32dacf813c906b\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\da03e5d3574ffce55b32dacf813c906b\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:17.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\42fcc73b4e749ce03edeb503f5134e26\jetified-play-services-location-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\42fcc73b4e749ce03edeb503f5134e26\jetified-play-services-location-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\63d1772581a798a352b5dbfc52458bc2\jetified-relinker-1.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\63d1772581a798a352b5dbfc52458bc2\jetified-relinker-1.3.0\AndroidManifest.xml:5:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\39f77b88a89f9a1811ed784a76fcb771\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\39f77b88a89f9a1811ed784a76fcb771\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\572dc33869e9ba135f7c789eebb587b6\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\572dc33869e9ba135f7c789eebb587b6\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\9bc300b97da9fcf72977fc0b380701ec\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\9bc300b97da9fcf72977fc0b380701ec\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\badfa1ec3a8799a7b5ed19fa1e293d1f\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\badfa1ec3a8799a7b5ed19fa1e293d1f\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\589cf6078fa56c45d2187cc01adb1f70\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\589cf6078fa56c45d2187cc01adb1f70\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\2118cdaf89a5e045e6100c9eaa0941bf\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\2118cdaf89a5e045e6100c9eaa0941bf\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-base:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4f7f1721ae8619b44c2fe30baf0818fe\jetified-play-services-base-17.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4f7f1721ae8619b44c2fe30baf0818fe\jetified-play-services-base-17.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\5e6b788bd1ccc685a945fb74d14b531c\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\5e6b788bd1ccc685a945fb74d14b531c\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\aad4fb6ef9c26fcbf635358e016e9176\jetified-play-services-tasks-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\aad4fb6ef9c26fcbf635358e016e9176\jetified-play-services-tasks-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\851078204df5150a1880fecebd46e082\jetified-play-services-basement-17.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\851078204df5150a1880fecebd46e082\jetified-play-services-basement-17.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\fa9e8757704a461b5dfc3e6f053246af\fragment-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\fa9e8757704a461b5dfc3e6f053246af\fragment-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\cd5ee176270a8e415cf299c762af6399\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\cd5ee176270a8e415cf299c762af6399\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\bb70640a0640c0794dd1c71bb87d9afe\transition-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\bb70640a0640c0794dd1c71bb87d9afe\transition-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\aaef7a5342ac147a4e1c3bc9a317fc17\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\aaef7a5342ac147a4e1c3bc9a317fc17\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\d171d44fd397d1d33aefdc5e78eba7b0\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\d171d44fd397d1d33aefdc5e78eba7b0\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\72474bd07c3150ed19d8a4b6d192bbc7\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\72474bd07c3150ed19d8a4b6d192bbc7\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\3bb60fc885a649f92b76e1d3a449b151\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\3bb60fc885a649f92b76e1d3a449b151\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4ac660b932405275c4fc734a16352a74\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4ac660b932405275c4fc734a16352a74\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\740dd4b63fd3225a9336256185df7d2e\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\740dd4b63fd3225a9336256185df7d2e\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7272d0232e3b614beb534c1d51506f5b\navigation-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7272d0232e3b614beb534c1d51506f5b\navigation-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\0c5e9de9948f24672acfe8b4737ffe61\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\0c5e9de9948f24672acfe8b4737ffe61\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\1eefed802e56962cf4ee4fd6e763f3c6\navigation-common-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\1eefed802e56962cf4ee4fd6e763f3c6\navigation-common-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\1e563c1c8ecd635a98430e829691076e\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\1e563c1c8ecd635a98430e829691076e\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\c623737eec68f5bf8f604f5122d56503\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\c623737eec68f5bf8f604f5122d56503\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\ce24a8565cb066359d524a3bcbd68f26\core-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\ce24a8565cb066359d524a3bcbd68f26\core-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\36764c8b21d09183d4e22f3df087d597\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\36764c8b21d09183d4e22f3df087d597\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\05f07c21dafb76703b40a511cd883c5e\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\05f07c21dafb76703b40a511cd883c5e\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\01ea44f8b0acc24a469769392b0b1604\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\01ea44f8b0acc24a469769392b0b1604\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\2b14975756ea811e9d97b5c95d96a640\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\2b14975756ea811e9d97b5c95d96a640\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\b9ee36351dfadc1f1092c7ba6a262fb6\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\b9ee36351dfadc1f1092c7ba6a262fb6\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\b36bd37585d64fdb96aab3933cc2565c\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\b36bd37585d64fdb96aab3933cc2565c\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\a453291e1a5500f6228a6515f08c5bdd\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\a453291e1a5500f6228a6515f08c5bdd\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\d4d98ad9878600b55ca7bbf815c452aa\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\d4d98ad9878600b55ca7bbf815c452aa\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\2adfd1af7d904465e5762c3284187a22\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\2adfd1af7d904465e5762c3284187a22\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\671f80971726297b19e4583162a87006\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\671f80971726297b19e4583162a87006\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\0fd435bdec4de7c5b649fd87929c0764\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\0fd435bdec4de7c5b649fd87929c0764\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7e13ecdae31ab14de2c2b0cdddcdcbe2\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7e13ecdae31ab14de2c2b0cdddcdcbe2\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\13538c5dd1c7441d97b443122a0e0fb8\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\13538c5dd1c7441d97b443122a0e0fb8\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\5f499710b4716c54ef0465c6893d99cc\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\5f499710b4716c54ef0465c6893d99cc\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\6c587b770f4729eb40eafa56191b19a7\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\6c587b770f4729eb40eafa56191b19a7\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\be0d46a6efa58ed1f486222723c79258\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\be0d46a6efa58ed1f486222723c79258\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\63e01300dd87ab74a86ffa2fcd509412\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\63e01300dd87ab74a86ffa2fcd509412\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:5:5-44
+INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:5:5-44
+		INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:5:15-41
+		INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:7:22-77
+uses-permission#android.permission.INTERNET
+ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:8:22-64
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.READ_CALENDAR
+ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:10:5-72
+	android:name
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:10:22-69
+uses-permission#android.permission.WRITE_CALENDAR
+ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:11:5-73
+	android:name
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:11:22-70
+application
+ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:13:5-33:19
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\03020fecc676fc6b913c6a6cf0121dac\material-1.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\03020fecc676fc6b913c6a6cf0121dac\material-1.2.1\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7c7e25a8ce9ae860285adbdb6809d294\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\7c7e25a8ce9ae860285adbdb6809d294\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\52d2e4c79ad933c9a6f2812a04f3a984\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\52d2e4c79ad933c9a6f2812a04f3a984\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\08f4dbd112e242ba84776b6b1311f078\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\08f4dbd112e242ba84776b6b1311f078\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.gms:play-services-location:17.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\42fcc73b4e749ce03edeb503f5134e26\jetified-play-services-location-17.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\42fcc73b4e749ce03edeb503f5134e26\jetified-play-services-location-17.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4f7f1721ae8619b44c2fe30baf0818fe\jetified-play-services-base-17.3.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4f7f1721ae8619b44c2fe30baf0818fe\jetified-play-services-base-17.3.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\5e6b788bd1ccc685a945fb74d14b531c\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\5e6b788bd1ccc685a945fb74d14b531c\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\aad4fb6ef9c26fcbf635358e016e9176\jetified-play-services-tasks-17.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\aad4fb6ef9c26fcbf635358e016e9176\jetified-play-services-tasks-17.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\851078204df5150a1880fecebd46e082\jetified-play-services-basement-17.3.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\851078204df5150a1880fecebd46e082\jetified-play-services-basement-17.3.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.3.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\ce24a8565cb066359d524a3bcbd68f26\core-1.3.2\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\ce24a8565cb066359d524a3bcbd68f26\core-1.3.2\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\36764c8b21d09183d4e22f3df087d597\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\36764c8b21d09183d4e22f3df087d597\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\05f07c21dafb76703b40a511cd883c5e\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\05f07c21dafb76703b40a511cd883c5e\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\0fd435bdec4de7c5b649fd87929c0764\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\0fd435bdec4de7c5b649fd87929c0764\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+	android:requestLegacyExternalStorage
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:20:9-53
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.2] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\ce24a8565cb066359d524a3bcbd68f26\core-1.3.2\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:18:9-35
+	android:label
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:16:9-41
+	android:hardwareAccelerated
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:21:9-44
+	android:roundIcon
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:17:9-54
+	android:largeHeap
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:22:9-33
+	android:icon
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:15:9-43
+	android:allowBackup
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:14:9-35
+	android:theme
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:19:9-40
+activity#com.ariasluque.agendainteractiva.MainActivity
+ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:24:9-32:20
+	android:label
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:26:13-45
+	android:name
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:25:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:27:13-31:29
+action#android.intent.action.MAIN
+ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from D:\AndroidStudioProjects\AgendaInteractiva\app\src\main\AndroidManifest.xml:30:27-74
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4f7f1721ae8619b44c2fe30baf0818fe\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4f7f1721ae8619b44c2fe30baf0818fe\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4f7f1721ae8619b44c2fe30baf0818fe\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\4f7f1721ae8619b44c2fe30baf0818fe\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\851078204df5150a1880fecebd46e082\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\851078204df5150a1880fecebd46e082\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\851078204df5150a1880fecebd46e082\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\05f07c21dafb76703b40a511cd883c5e\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\05f07c21dafb76703b40a511cd883c5e\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\05f07c21dafb76703b40a511cd883c5e\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\05f07c21dafb76703b40a511cd883c5e\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Neo VI\.gradle\caches\transforms-2\files-2.1\05f07c21dafb76703b40a511cd883c5e\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
