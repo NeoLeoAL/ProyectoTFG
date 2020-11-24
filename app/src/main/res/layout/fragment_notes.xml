@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notes.NotesFragment">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_color"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="?attr/backgroundColor"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/coordinatorLayout_tools"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav_view"
+        app:menu="@menu/color_nav_menu"/>
+
+    <FrameLayout
+        android:id="@+id/write_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/coordinatorLayout_tools"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/paint_panel">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:backgroundTint="@null"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:minLines="10"
+            android:padding="16dp"
+            android:text="@string/text"
+            android:textColor="?android:attr/textColorPrimary"
+            android:theme="@style/fieldText" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/paint_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/coordinatorLayout_tools"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ui.notes.paint">
+
+        <com.ariasluque.agendainteractiva.ui.notes.paint.PaintView
+            android:id="@+id/paintContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_note_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_note_white_24dp"
+        android:tint="?attr/tint"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton_text_color_or_eraser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/floatingActionButton_text_color_or_eraser"
+        app:rippleColor="?attr/rippleColor"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_text_color_or_eraser"
+        android:layout_width="53dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_palette_white_24dp"
+        android:tint="?attr/tint"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton_text_or_brush"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/floatingActionButton_text_or_brush"
+        app:rippleColor="?attr/rippleColor"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_text_or_brush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_mode_edit_white_24dp"
+        android:tint="?attr/tint"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout_tools"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="?attr/rippleColor"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout_tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton_tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="22dp"
+            android:backgroundTint="?attr/colorAccent"
+            android:clickable="true"
+            android:src="@drawable/ic_more_vert_white_24dp"
+            android:tint="?attr/tint"
+            app:fabSize="normal"
+            tools:targetApi="lollipop"
+            android:focusable="true"
+            app:rippleColor="?attr/rippleColor"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

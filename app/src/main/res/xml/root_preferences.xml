@@ -1,0 +1,18 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/language_header">
+        <ListPreference
+            app:key="language_preference"
+            app:title="@string/language_header"
+            app:entries="@array/Language"
+            app:entryValues="@array/languageAlias"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/theme_header">
+        <SwitchPreferenceCompat
+            app:key="theme_preference"
+            app:title="@string/theme_header"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

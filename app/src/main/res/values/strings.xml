@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Diary</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_task">Task</string>
+    <string name="title_notes">Notes</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+
+    <!-- Note Fragment -->
+    <string name="text">Text</string>
+
+    <string name="title_new">New</string>
+    <string name="title_delete">Delete</string>
+    <string name="title_save">Save</string>
+    <string name="title_update">Update</string>
+
+    <string name="title_delete_notes">Delete Notes</string>
+    <string name="removed_notes">Notes removed!</string>
+    <string name="message_delete_current_note">Do you want to delete the current note?</string>
+    <string name="message_delete_notes">Do you want to delete the notes?</string>
+    <string name="saved_note">Note Saved!</string>
+
+    <string name="color_black">Black</string>
+    <string name="color_gray">Gray</string>
+    <string name="color_white">White</string>
+    <string name="color_red">Red</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_yellow">Yellow</string>
+    <string name="color_green">Green</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_brown">Brown</string>
+    <string name="color_purple">Purple</string>
+    <!-- New Note Dialog -->
+    <string name="new_note">New Note</string>
+    <string name="title_note_data">Title</string>
+    <!-- Info Fragment Note -->
+    <string name="title_delete_note">Delete Note</string>
+    <string name="message_delete_note">Do you want to delete note?</string>
+    <string name="removed_note">Note removed!</string>
+
+    <!-- Task Fragment -->
+    <string name="task_done">Task Done!</string>
+    <string name="title_delete_tasks">Delete Completed Tasks</string>
+    <string name="message_delete_tasks">Do you want to delete the completed tasks?</string>
+    <string name="removed_tasks">Tasks removed!</string>
+    <!-- New Task Dialog -->
+    <string name="new_task">New Task</string>
+    <string name="created_task">Task Edited!</string>
+    <string name="title_task_data">Task</string>
+    <string name="description_view_task">Description:</string>
+    <string name="description_task_data">Description task</string>
+    <string name="allDay_view_task">All Day:</string>
+    <string name="task_Date">Date:</string>
+    <string name="task_startedDate">Started Date:</string>
+    <string name="task_finishedDate">Finished Date:</string>
+    <string name="colorEvent">Color Event:</string>
+    <string name="event">Event:</string>
+    <!-- Edit Task Dialog -->
+    <string name="title_edit">Edit Task</string>
+    <string name="edited_message">Task Edited!</string>
+    <string name="empty_message">Empty fields!</string>
+    <!-- Info Fragment Task -->
+    <string name="title_delete_task">Delete Task</string>
+    <string name="message_delete_task">Do you want to delete task?</string>
+    <string name="removed_task">Task removed!</string>
+
+    <!-- Data Info -->
+    <string name="title_data">Title:</string>
+    <string name="date_data">Date:</string>
+    <string name="time_data">Time:</string>
+    <string name="alarm_data">Alarm:</string>
+
+    <string name="date_format" translatable="false">dd/mm/yyyy</string>
+    <string name="time_format" translatable="false">hh:mm</string>
+
+    <!-- Settings Fragment -->
+    <string name="file_settings" translatable="false">preferenceSettings</string>
+    <string name="language_header">Language</string>
+    <string name="language_english">English</string>
+    <string name="language_spanish">Spanish</string>
+
+    <string name="theme_header">Theme</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_light">Light</string>
+
+    <!-- Positive/Nagative Options -->
+    <string name="positive_yes">Yes</string>
+    <string name="negative_no">No</string>
+    <string name="positive_ok">Ok</string>
+    <string name="negative_cancel">Cancel</string>
+
+    <!-- Permisos -->
+    <string name="permissions_not_granted">Permissions are not granted!</string>
+
+</resources>

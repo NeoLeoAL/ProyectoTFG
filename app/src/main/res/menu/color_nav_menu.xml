@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/color_black"
+        android:icon="@drawable/ic_lens_black_24dp"
+        android:title="@string/color_black"/>
+
+    <item
+        android:id="@+id/color_gray"
+        android:icon="@drawable/ic_lens_gray_24dp"
+        android:title="@string/color_gray"/>
+
+    <item
+        android:id="@+id/color_white"
+        android:icon="@drawable/ic_lens_white_24dp"
+        android:title="@string/color_white"/>
+
+    <item
+        android:id="@+id/color_red"
+        android:icon="@drawable/ic_lens_red_24dp"
+        android:title="@string/color_red"/>
+
+    <item
+        android:id="@+id/color_blue"
+        android:icon="@drawable/ic_lens_blue_24dp"
+        android:title="@string/color_blue"/>
+
+    <item
+        android:id="@+id/color_yellow"
+        android:icon="@drawable/ic_lens_yellow_24dp"
+        android:title="@string/color_yellow"/>
+
+    <item
+        android:id="@+id/color_green"
+        android:icon="@drawable/ic_lens_green_24dp"
+        android:title="@string/color_green"/>
+
+    <item
+        android:id="@+id/color_orange"
+        android:icon="@drawable/ic_lens_orange_24dp"
+        android:title="@string/color_orange"/>
+
+    <item
+        android:id="@+id/color_brown"
+        android:icon="@drawable/ic_lens_brown_24dp"
+        android:title="@string/color_brown"/>
+
+    <item
+        android:id="@+id/color_purple"
+        android:icon="@drawable/ic_lens_purple_24dp"
+        android:title="@string/color_purple"/>
+
+</menu>

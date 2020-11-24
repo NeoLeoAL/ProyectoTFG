@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.ariasluque.agendainteractiva.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_notes"
+        android:name="com.ariasluque.agendainteractiva.ui.notes.NotesFragment"
+        android:label="@string/title_notes"
+        tools:layout="@layout/fragment_notes" />
+    <fragment
+        android:id="@+id/navigation_task"
+        android:name="com.ariasluque.agendainteractiva.ui.task.TaskFragment"
+        android:label="fragment_task"
+        tools:layout="@layout/fragment_task" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.ariasluque.agendainteractiva.ui.settings.SettingsFragment"
+        android:label="root_preferences" />
+    <fragment
+        android:id="@+id/navigation_infoFragmentNote"
+        android:name="com.ariasluque.agendainteractiva.ui.info.InfoFragmentNote"
+        android:label="fragment_info_note" />
+    <fragment
+        android:id="@+id/navigation_infoFragmentTask"
+        android:name="com.ariasluque.agendainteractiva.ui.info.InfoFragmentTask"
+        android:label="fragment_info_task" />
+</navigation>
