@@ -4,15 +4,20 @@ import android.app.AlertDialog
 import android.content.ContentUris
 import android.content.Context
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.provider.CalendarContract
 import android.view.*
 import android.widget.Toast
+import androidx.annotation.RequiresApi
+import androidx.core.content.ContextCompat
+import androidx.core.graphics.drawable.DrawableCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ariasluque.agendainteractiva.R
 import com.ariasluque.agendainteractiva.controller.MyTaskRecyclerViewAdapter
+import com.ariasluque.agendainteractiva.controller.OnNotesInteractionListener
 import com.ariasluque.agendainteractiva.controller.OnTasksInteractionListener
 import com.ariasluque.agendainteractiva.models.Task
 import com.ariasluque.agendainteractiva.ui.task.dialog.NewTaskDialog
@@ -25,14 +30,15 @@ class TaskFragment : Fragment() {
 
     private var columnCount = 1
 
-    private var mListenerTI: OnTasksInteractionListener? = null
-    private lateinit var mListenerNT : OnInteractionListener
+    private var mListener : OnTasksInteractionListener? = null
     private lateinit var newTaskDialog: NewTaskDialog // Dialogo de la tarea
 
     private lateinit var realm: Realm
     private lateinit var taskBDList : RealmResults<Task> // Listado de notas de BD
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(
+        savedInstanceState: Bundle?
+    ) {
         super.onCreate(savedInstanceState)
 
         // Toma una instancia de Realm
@@ -58,7 +64,7 @@ class TaskFragment : Fragment() {
                 adapter =
                     MyTaskRecyclerViewAdapter(
                         taskBDList,
-                        mListenerTI
+                        mListener
                     )
             }
         }
@@ -67,6 +73,7 @@ class TaskFragment : Fragment() {
         return view
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         menu.clear()
         inflater.inflate(R.menu.toolbar_menu_task, menu)
@@ -84,7 +91,7 @@ class TaskFragment : Fragment() {
 
                     // Borra todas las TAKS realizadas de la BD
                     realm.executeTransaction { realm ->
-                        var results: RealmResults<Task> = realm.where(Task::class.java)
+                        val results: RealmResults<Task> = realm.where(Task::class.java)
                             .equalTo("taskDone", true)
                             .findAll()
 
@@ -97,7 +104,7 @@ class TaskFragment : Fragment() {
                         results.deleteAllFromRealm()
                     }
 
-                    mListenerNT?.onTaskFragment() // Refresca el contenido del fragment
+                    mListener?.onTaskFragment() // Refresca el contenido del fragment
 
                     val toast = Toast.makeText(
                         activity,
@@ -115,9 +122,9 @@ class TaskFragment : Fragment() {
             true
         }
 
-        R.id.update_task_tool -> {
-            mListenerNT.onUpdateTask()
-            mListenerNT.onTaskFragment()
+        6666 -> {
+            mListener?.onUpdateTask()
+            mListener?.onTaskFragment()
 
             val toast = Toast.makeText(
                 activity,
@@ -145,18 +152,15 @@ class TaskFragment : Fragment() {
         super.onAttach(context)
 
         try {
-            mListenerNT = context as OnInteractionListener
-
-            if (context is OnTasksInteractionListener) mListenerTI = context
-            else throw RuntimeException("$context must implement OnListFragmentInteractionListener")
+            mListener = context as OnTasksInteractionListener
 
         } catch (e: ClassCastException) {
-            throw ClassCastException(("$context must implement DialogListener"))
+            throw ClassCastException((context.toString() + " must implement DialogListener"))
         }
     }
 
     override fun onDetach() {
         super.onDetach()
-        mListenerTI = null
+        mListener = null
     }
 }

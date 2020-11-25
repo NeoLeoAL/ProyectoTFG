@@ -1,43 +1,53 @@
 package com.ariasluque.agendainteractiva.ui.notes.paint
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.util.DisplayMetrics
 import android.view.MotionEvent
 import android.view.View
+import kotlin.math.abs
 
 class PaintView : View {
 
     private val BRUSH_SIZE : Float = 10f // Tamaño del pincel
     private val DEFAULT_COLOR : Int = Color.BLACK // Color por defecto del pincel
-    private val DEFAULT_BG_COLOR : Int = Color.WHITE // Color de fondo por defecto
-    private val TOUCH_TOLERANCE : Float = 4f
+    private val DEFAULT_BG_COLOR : Int = Color.WHITE // Color por defecto del fondo
+    private val TOUCH_TOLERANCE : Float = 4f // Grado de tolerancia al tacto
 
+    // Parametros para las coordenadas a dibujar
     private var mX : Float = 0f
     private var mY : Float = 0f
 
+    // Parametros para trazar la ruta de los dedos
     private lateinit var mPath : Path
     private var mPaint : Paint = Paint()
     private var paths : ArrayList<FingerPath> = ArrayList()
 
     private var currentColor : Int = DEFAULT_COLOR // Color actual del pincel
-    private var bgColor : Int = DEFAULT_BG_COLOR
-    private var strokeWidth : Float = BRUSH_SIZE // Anchura del trazo
+    private var bgColor : Int = DEFAULT_BG_COLOR // Color actual del fondo
+    private var strokeWidth : Float = BRUSH_SIZE // Ancho del trazo
 
-    // OP?
+    // Filtros del color
     private var emboss : Boolean = false // Realzado
     private var blur : Boolean = false // Difuminado
     private var mEmboss : MaskFilter
     private var mBlur : MaskFilter
 
+    // Lienzo
     lateinit var mBitmap : Bitmap
     lateinit var mCanvas: Canvas
     private var mBitmapPaint: Paint = Paint(Paint.DITHER_FLAG)
 
-    constructor(context: Context) : this(context, null)
+    constructor(
+        context: Context
+    ) : this(context, null)
 
-    constructor(context: Context?, attributeSet: AttributeSet?) : super(context, attributeSet) {
+    constructor(
+        context: Context?,
+        attributeSet: AttributeSet?
+    ) : super(context, attributeSet) {
         mPaint.isAntiAlias = true
         mPaint.isDither = true
         mPaint.color = DEFAULT_COLOR
@@ -51,23 +61,26 @@ class PaintView : View {
         mBlur = BlurMaskFilter(5f, BlurMaskFilter.Blur.NORMAL)
     }
 
+    // Crea el bitmap y el canvas con las medidas del elemento lienzo
     fun init(metrics: DisplayMetrics){
-        var height = metrics.heightPixels
-        var width = metrics.widthPixels
+        val height = metrics.heightPixels
+        val width = metrics.widthPixels
 
         mBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
         mCanvas = Canvas(mBitmap)
     }
 
+    // Cambia el color
     fun changeColor(color : Int){
         currentColor = color
     }
 
-    fun normal(){
+    private fun normal(){
         emboss = false
         blur = false
     }
 
+    // Limpia los parametros
     fun clear(){
         bgColor = DEFAULT_BG_COLOR
         currentColor = DEFAULT_COLOR
@@ -77,7 +90,10 @@ class PaintView : View {
         invalidate()
     }
 
-    override fun onDraw(canvas: Canvas){
+    // Dibuja sobre el canvas
+    override fun onDraw(
+        canvas: Canvas
+    ){
         canvas.save()
         mCanvas.drawColor(bgColor)
 
@@ -96,36 +112,13 @@ class PaintView : View {
         canvas.restore()
     }
 
-    private fun touchStar(x : Float, y : Float){
-        mPath = Path()
-
-        var fPath : FingerPath = FingerPath(currentColor, emboss, blur, strokeWidth, mPath)
-        paths.add(fPath)
-
-        mPath.reset()
-        mPath.moveTo(x, y)
-        mX = x
-        mY = y
-    }
-
-    private fun touchMove(x : Float, y : Float){
-        var dx = Math.abs(x - mX)
-        var dy = Math.abs(y - mY)
-
-        if(dx >= TOUCH_TOLERANCE || dy >= TOUCH_TOLERANCE){
-            mPath.quadTo(mX, mY, (x + mX) / 2, (y + mY) / 2)
-            mX = x
-            mY = y
-        }
-    }
-
-    private fun touchUp(){
-        mPath.lineTo(mX, mY)
-    }
-
-    override fun onTouchEvent(event: MotionEvent?): Boolean {
-        var x = event!!.x
-        var y = event.y
+    // Evento cuando se toca la pantalla
+    @SuppressLint("ClickableViewAccessibility")
+    override fun onTouchEvent(
+        event: MotionEvent?
+    ): Boolean {
+        val x = event!!.x
+        val y = event.y
 
         when(event.action){
             MotionEvent.ACTION_DOWN -> {
@@ -143,5 +136,35 @@ class PaintView : View {
         }
 
         return true
+    }
+
+    // Evento que se lanza cuando comienza a tocar la pantalla
+    private fun touchStar(x : Float, y : Float){
+        mPath = Path()
+
+        val fPath = FingerPath(currentColor, emboss, blur, strokeWidth, mPath)
+        paths.add(fPath)
+
+        mPath.reset()
+        mPath.moveTo(x, y)
+        mX = x
+        mY = y
+    }
+
+    // Evento que ocurre cuando se mueve el dedo por la pantalla
+    private fun touchMove(x : Float, y : Float){
+        val dx = abs(x - mX)
+        val dy = abs(y - mY)
+
+        if(dx >= TOUCH_TOLERANCE || dy >= TOUCH_TOLERANCE){
+            mPath.quadTo(mX, mY, (x + mX) / 2, (y + mY) / 2)
+            mX = x
+            mY = y
+        }
+    }
+
+    // Evento que ocurre cuando levanta el dedo de la pantalla
+    private fun touchUp(){
+        mPath.lineTo(mX, mY)
     }
 }

@@ -18,14 +18,18 @@ import io.realm.kotlin.where
 
 class HomeFragment : Fragment() {
 
-    private var columnCount = 2
+    private var COLUMN_COUNT = 2
 
-    private var mListener: OnNotesInteractionListener? = null
+    private var mListener: OnNotesInteractionListener? = null // Listener de las notas
 
     private lateinit var realm: Realm
     private lateinit var notesBDList : RealmResults<Notes> // Listado de notas de BD
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    // ------------------------ ON CREATE ------------------------ //
+
+    override fun onCreate(
+        savedInstanceState: Bundle?
+    ) {
         super.onCreate(savedInstanceState)
 
         // Toma una instancia de Realm
@@ -45,7 +49,7 @@ class HomeFragment : Fragment() {
         // Set the adapter
         if (view is RecyclerView) {
             with(view) {
-                GridLayoutManager(context, columnCount)
+                GridLayoutManager(context, COLUMN_COUNT)
 
                 adapter =
                     MyNotesRecyclerViewAdapter(
@@ -58,12 +62,14 @@ class HomeFragment : Fragment() {
         return view
     }
 
-    override fun onAttach(context: Context) {
+    override fun onAttach(
+        context: Context
+    ) {
         super.onAttach(context)
         if (context is OnNotesInteractionListener) {
             mListener = context
         } else {
-            throw RuntimeException(context.toString() + " must implement OnListFragmentInteractionListener")
+            throw RuntimeException("$context must implement OnListFragmentInteractionListener")
         }
     }
 

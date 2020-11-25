@@ -1,6 +1,7 @@
 package com.ariasluque.agendainteractiva
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.content.*
 import android.content.pm.PackageManager
 import android.content.res.Configuration
@@ -67,7 +68,9 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
 
     // ------------------------ ON CREATE ------------------------ //
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(
+        savedInstanceState: Bundle?
+    ) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -102,7 +105,6 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
         // Toma una instancia de Realm
         realm = Realm.getDefaultInstance()
 
-        /*
         // Borra toda la BD
         realm.executeTransaction { realm ->
             // Delete all matches
@@ -110,12 +112,12 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
             realm.where<Notes>().findAll().deleteAllFromRealm()
             realm.where<Task>().findAll().deleteAllFromRealm()
         }
-         */
 
         // Configura Realm para no tener que migrar la BD cada vez que esta cambie
         RealmConfiguration.Builder()
             .deleteRealmIfMigrationNeeded()
             .build()
+
     }
 
     // Añade o actualiza la nota en la BD
@@ -135,13 +137,17 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
     // ------------------------ ACTION BAR ------------------------ //
 
     // Crea el menu de opciones del ActionBAR
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    override fun onCreateOptionsMenu(
+        menu: Menu?
+    ): Boolean {
         menuInflater.inflate(R.menu.toolbar_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
     // Controla la selección del elemento del ActionBar
-    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+    override fun onOptionsItemSelected(
+        item: MenuItem
+    ) = when (item.itemId) {
         // Muestra el fragmentSettings para la configuración de la App
         R.id.action_settings -> {
             val navController = findNavController(R.id.nav_host_fragment)
@@ -183,6 +189,7 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
     // ------------------------ NOTE LISTENER ------------------------ //
 
     // Crea una primera nota con los datos básicos
+    @SuppressLint("SimpleDateFormat")
     override fun onNoteListener(
         title: String
     ) {
@@ -195,8 +202,8 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
     }
 
     // Actualiza el contenido de la nota cuando se le da a "Guardar"
-    override fun onUpdateNote(
-        note: Notes
+    override fun onPassNote(
+        idNote: Int
     ) {
         // Guarda en las preferencias de la App el id de la nota que luego se pasará al fragmento
         noteIdPreference(note.idNote)
@@ -249,13 +256,10 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
 
     // Permite visualizar el contenido de la nota a detalle
     override fun onNoteClick(
-        note: Notes
+        idNote: Int
     ) {
         // Guarda en las preferencias de la App el id de la nota que luego se pasará al fragmento
-        getSharedPreferences("Preferences", Context.MODE_PRIVATE)
-            .edit()
-            .putInt("idNote", note.idNote)
-            .commit()
+        getNotePreferences(idNote)
 
         onInfoNoteFragment() // Cambia al fragmento de información de notas
     }
@@ -263,6 +267,7 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
     // ------------------------ TASK LISTENER ------------------------ //
 
     // Crea la task con los datos básicos y el evento en el calendario
+    @SuppressLint("SimpleDateFormat")
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onTaskListener(
         title: String
@@ -281,7 +286,7 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
     // Crea un evento en el calendario con los datos de la task
     private fun insertEvent(){
         // Fecha y hora actual en milisegundos
-        var timeMillis = Calendar.getInstance().run {
+        val timeMillis = Calendar.getInstance().run {
             timeInMillis
         }
 
@@ -329,6 +334,7 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
     }
 
     // Actualiza el titulo del task si ha sido actualizado en el calendario
+    @SuppressLint("Recycle")
     override fun onUpdateTask(){
         val taskBDList = realm.where<Task>().findAll() // Recoge todos los registros de la BD
 
@@ -375,10 +381,7 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
     private fun noteIdPreference(
         idNote : Int
     ){
-        getSharedPreferences(getString(R.string.file_settings), Context.MODE_PRIVATE)
-            .edit()
-            .putInt("idNote", idNote)
-            .commit()
+        getNotePreferences(idNote)
     }
 
     // Cambia el idioma de la App
@@ -392,10 +395,10 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
     private fun changeLocale(
         lang: String
     ){
-        var res = baseContext.resources
-        var config = Configuration(res?.configuration)
+        val res = baseContext.resources
+        val config = Configuration(res?.configuration)
 
-        var loc = Locale(lang)
+        val loc = Locale(lang)
         Locale.setDefault(loc)
 
         config.locale = loc
@@ -438,10 +441,17 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
         changeLocale(lang!!)
 
         val theme = sharedPreferences.getBoolean("theme_preference", false)
-        changeTheme(theme!!)
+        changeTheme(theme)
 
         // Establece el parametro a pasar "idNote" en 0
         noteIdPreference(0)
+    }
+
+    private fun getNotePreferences(idNote : Int){
+        getSharedPreferences(getString(R.string.file_settings), Context.MODE_PRIVATE)
+            .edit()
+            .putInt("idNote", idNote)
+            .apply()
     }
 
     // ------------------------ UTILS ------------------------ //
@@ -496,7 +506,7 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
         permissions: Array<out String>,
         grantResults: IntArray
     ) {
-        if (REQUEST_CODE === requestCode) {
+        if (REQUEST_CODE == requestCode) {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 return
             } else {
@@ -507,7 +517,7 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
                 ).show()
             }
         } else {
-            super.onRequestPermissionsResult(requestCode, permissions!!, grantResults)
+            super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         }
     }
 }

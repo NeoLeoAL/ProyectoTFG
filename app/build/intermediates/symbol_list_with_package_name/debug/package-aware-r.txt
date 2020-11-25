@@ -1948,6 +1948,7 @@ id easeOut
 id editText
 id editTextDialog
 id editTitleTask
+id edit_note_tool
 id edit_query
 id end
 id end_padder
@@ -2575,6 +2576,7 @@ string title_delete_notes
 string title_delete_task
 string title_delete_tasks
 string title_edit
+string title_edit_tool
 string title_home
 string title_new
 string title_note_data

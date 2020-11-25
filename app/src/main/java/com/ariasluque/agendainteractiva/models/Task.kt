@@ -14,9 +14,12 @@ open class Task : RealmObject {
     constructor()
 
     // Constructor de nota de texto
-    constructor(idTask : Long, titleTask : String, creationDate : String,
-                taskDone : Boolean){
-
+    constructor(
+        idTask : Long,
+        titleTask : String,
+        creationDate : String,
+        taskDone : Boolean
+    ){
         this.idTask = idTask
         this.titleTask = titleTask
         this.creationDate = creationDate

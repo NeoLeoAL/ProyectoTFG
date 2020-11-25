@@ -15,6 +15,7 @@
     <string name="title_delete">Delete</string>
     <string name="title_save">Save</string>
     <string name="title_update">Update</string>
+    <string name="title_edit_tool">Edit</string>
 
     <string name="title_delete_notes">Delete Notes</string>
     <string name="removed_notes">Notes removed!</string>
@@ -49,14 +50,7 @@
     <string name="new_task">New Task</string>
     <string name="created_task">Task Edited!</string>
     <string name="title_task_data">Task</string>
-    <string name="description_view_task">Description:</string>
-    <string name="description_task_data">Description task</string>
-    <string name="allDay_view_task">All Day:</string>
     <string name="task_Date">Date:</string>
-    <string name="task_startedDate">Started Date:</string>
-    <string name="task_finishedDate">Finished Date:</string>
-    <string name="colorEvent">Color Event:</string>
-    <string name="event">Event:</string>
     <!-- Edit Task Dialog -->
     <string name="title_edit">Edit Task</string>
     <string name="edited_message">Task Edited!</string>
@@ -88,7 +82,7 @@
     <!-- Positive/Nagative Options -->
     <string name="positive_yes">Yes</string>
     <string name="negative_no">No</string>
-    <string name="positive_ok">Ok</string>
+    <string name="positive_ok">OK</string>
     <string name="negative_cancel">Cancel</string>
 
     <!-- Permisos -->

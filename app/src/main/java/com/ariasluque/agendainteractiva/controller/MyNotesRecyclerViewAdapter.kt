@@ -25,7 +25,7 @@ class MyNotesRecyclerViewAdapter(
     init {
         mOnClickListener = View.OnClickListener { v ->
             val item = v.tag as Notes
-            mListener?.onNoteClick(item)
+            mListener?.onNoteClick(item.idNote)
         }
     }
 

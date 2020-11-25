@@ -14,6 +14,12 @@
         app:showAsAction="ifRoom"/>
 
     <item
+        android:id="@+id/edit_note_tool"
+        android:icon="@drawable/ic_create_black_24dp"
+        android:title="@string/title_edit_tool"
+        app:showAsAction="ifRoom"/>
+
+    <item
         android:id="@+id/save_note_tool"
         android:icon="@drawable/ic_save_black_24dp"
         android:title="@string/title_save"

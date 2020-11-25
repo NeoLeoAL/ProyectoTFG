@@ -65,6 +65,7 @@
     <string name="title_delete_task">Eliminar Tarea</string>
     <string name="title_delete_tasks">Eliminar tareas completas</string>
     <string name="title_edit">Editar Tarea</string>
+    <string name="title_edit_tool">Editar</string>
     <string name="title_home">Inicio</string>
     <string name="title_new">Nuevo</string>
     <string name="title_note_data">Titulo</string>

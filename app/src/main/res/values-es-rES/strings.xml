@@ -32,8 +32,6 @@
     <string name="theme_dark">Oscuro</string>
     <string name="theme_light">Claro</string>
     <string name="title_task_data">Tarea</string>
-    <string name="task_date">Fecha</string>
-    <string name="alarm">Alarma</string>
     <string name="new_task">Nueva Tarea</string>
     <string name="title_note_data">Titulo</string>
     <string name="title_data">Titulo:</string>
@@ -64,21 +62,8 @@
     <string name="negative_no">No</string>
     <string name="positive_ok">Ok</string>
     <string name="negative_cancel">Cancelar</string>
-    <string name="description_view_task">Descripción:</string>
-    <string name="description_task_data">Descripción de la tarea</string>
-    <string name="title_view_task">Título</string>
-    <string name="allDay_view_task">Todo el día:</string>
-    <string name="task_startedDate">Fecha inicio:</string>
-    <string name="task_startedTime">Hora inicio:</string>
-    <string name="task_finishedDate">Fecha finalización:</string>
-    <string name="task_finishedTime">Hora finalización:</string>
-    <string name="replayEvent">Repetir evento:</string>
-    <string name="ubicationTask">Ubicación evento:</string>
-    <string name="event">Evento:</string>
-    <string name="notificationEvent">Notificación evento:</string>
-    <string name="colorEvent">Color evento:</string>
-    <string name="ubication_task_data">Ubicación</string>
     <string name="task_Date">Fecha:</string>
     <string name="title_update">Actualizar</string>
     <string name="permissions_not_granted">¡No se otorgaron permisos!</string>
+    <string name="title_edit_tool">Editar</string>
 </resources>

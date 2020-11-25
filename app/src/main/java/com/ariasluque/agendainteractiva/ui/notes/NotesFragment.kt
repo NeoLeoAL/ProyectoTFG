@@ -32,16 +32,19 @@ class NotesFragment : Fragment(), NavigationView.OnNavigationItemSelectedListene
 
     private lateinit var root : View
 
+    private val DEF_ID_NOTE_PREFERENCE = 0
+
+    // Colores por defecto
     private var currentColor : Int = Color.BLACK
     private var currentBgColor : Int = Color.WHITE
 
     private lateinit var mInteractionListener : OnNotesInteractionListener // Listener para pasar los datos al activity
     private lateinit var newNoteDialog: NewNoteDialog // Dialogo de la primera nota
 
-    private lateinit var btnTools : FloatingActionButton
+    private lateinit var btnTools : FloatingActionButton // Muestra el resto de botones
     private lateinit var btnTextOrBrush : FloatingActionButton // Cambia entre texto y dibujo
     private lateinit var btnTextColorOrEraser : FloatingActionButton // Cambia entre color de texto y goma de borrar
-    private lateinit var btnNoteColor : FloatingActionButton // Color de las notas
+    private lateinit var btnNoteColor : FloatingActionButton // Muestra los colores de las notas
     private lateinit var navColor : NavigationView // Barra de navegación de colores
 
     // Fragment Layout
@@ -55,12 +58,10 @@ class NotesFragment : Fragment(), NavigationView.OnNavigationItemSelectedListene
     private var isColor = false // Controla se se muestra la barra de colores
     private var isNote = true // Controla si es el color del texto o de la nota
 
-    // Animaciones
+    // Animaciones de los botones
     private lateinit var fabOpenAnim : Animation
     private lateinit var fabCloseAnim : Animation
 
-    // Notas
-    private lateinit var realm : Realm
     private var note : Notes? = null
 
     override fun onCreateView(
@@ -68,9 +69,27 @@ class NotesFragment : Fragment(), NavigationView.OnNavigationItemSelectedListene
         container: ViewGroup?,
         savedInstanceState: Bundle?
 
-    ): View? {
+    ): View {
         root = inflater.inflate(R.layout.fragment_notes, container, false)
+        getLayoutItems()
 
+        val idNote = getNoteIdPreference()
+
+        // Si se está pasando una nota se recoge de la BD
+        if(idNote != 0){
+            // Busca la note con el id que se le ha pasado
+            note = Realm.getDefaultInstance().where<Notes>().equalTo("idNote", idNote).findFirst()!!
+            setNoteIdPreference()
+        }
+
+        init()
+        setHasOptionsMenu(true)
+
+        return root
+    }
+
+    // Coge la referencia a los elementos del layout
+    private fun getLayoutItems(){
         // Botones flotantes
         btnTools = root.findViewById(R.id.floatingActionButton_tools)
         btnTextOrBrush = root.findViewById(R.id.floatingActionButton_text_or_brush)
@@ -85,34 +104,91 @@ class NotesFragment : Fragment(), NavigationView.OnNavigationItemSelectedListene
         paintContainer = root.findViewById(R.id.paintContainer)
         textView = root.findViewById(R.id.write_panel)
         editText = root.findViewById(R.id.editText)
-
-        // Recibe el id del note desde el activity
-        val prefs = requireActivity().getSharedPreferences("Preferences", 0)
-        val idNote : Int = prefs.getInt("idNote", 0)
-
-        if(idNote != 0){
-            // Toma una instancia de Realm
-            realm = Realm.getDefaultInstance()
-
-            // Busca la note con el id que se le ha pasado
-            note = realm.where<Notes>().equalTo("idNote", idNote).findFirst()!!
-
-            val editor = prefs.edit()
-            editor.putInt("idNote", 0)
-            editor.commit()
-        }
-
-        init()
-
-        setHasOptionsMenu(true)
-
-        return root
     }
 
-    // Crea el menu de opciones del ACtionBAR
+    // ------------------------ PREFERENCIAS ------------------------ //
+
+    // Recibe el id del note desde las preferencias
+    private fun getNoteIdPreference(): Int{
+        return requireActivity().getSharedPreferences(getString(R.string.file_settings), Context.MODE_PRIVATE)
+            .getInt("idNote", DEF_ID_NOTE_PREFERENCE)
+    }
+
+    // Cambia el id y lo pone a 0 por defecto en las preferencias
+    private fun setNoteIdPreference(){
+        requireActivity().getSharedPreferences(getString(R.string.file_settings), Context.MODE_PRIVATE)
+            .edit()
+            .putInt("idNote", DEF_ID_NOTE_PREFERENCE)
+            .apply()
+    }
+
+    // ------------------------ INIT ------------------------ //
+
+    // Recoge los elementos del layout
+    private fun init(){
+        // PaintView
+        val metrics = DisplayMetrics()
+        requireActivity().windowManager.defaultDisplay.getMetrics(metrics)
+        paintContainer.init(metrics)
+
+        // Quita el color de los iconos de la barra de colores
+        navColor.itemIconTintList = null
+
+        // Listener de los NavigationView
+        navColor.setNavigationItemSelectedListener(this)
+
+        // Listener de los btns
+        showTools()
+        changeModeTextOrBrush()
+        changeModeTextColorOrErase()
+        changeColorNotes()
+
+        // Si se va a editar una nota se pega el contenido
+        if(note != null){
+            if(note!!.urlImage == ""){
+                editText.setText(note!!.contentNote, TextView.BufferType.EDITABLE)
+                editText.setTextColor(note!!.textColor)
+                editText.setBackgroundColor(note!!.noteColor)
+
+            }else{
+                btnTextOrBrush.setImageResource(R.drawable.ic_title_white_24dp)
+                btnTextColorOrEraser.setImageResource(R.drawable.ic_borrar_white_24dp)
+                btnNoteColor.setImageResource(R.drawable.ic_palette_white_24dp)
+
+                paintView.visibility = View.VISIBLE
+                textView.visibility = View.GONE
+
+                isText = false
+
+                // TODO Arreglar Editar
+                var bitmap: Bitmap? = null
+
+                try {
+                    val fileInputStream = FileInputStream(note!!.urlImage)
+                    bitmap = BitmapFactory.decodeStream(fileInputStream)
+                } catch (io: IOException) {
+                    io.printStackTrace()
+                }
+
+                paintContainer.mBitmap = bitmap!!
+            }
+
+        }else{
+            // Muestra el dialogo para crear una primera nota
+            newNoteDialog = NewNoteDialog()
+            newNoteDialog.show(requireFragmentManager(), resources.getString(R.string.new_note))
+        }
+    }
+
+    // ------------------------ ACTION BAR ------------------------ //
+
+    // Crea el menu de opciones del ActionBAR
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         menu.clear()
         inflater.inflate(R.menu.toolbar_menu_notes, menu)
+
+        // Quita la opción de editar del menú
+        menu.removeItem(R.id.edit_note_tool)
     }
 
     override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
@@ -209,65 +285,11 @@ class NotesFragment : Fragment(), NavigationView.OnNavigationItemSelectedListene
             mInteractionListener = context as OnNotesInteractionListener
 
         } catch (e: ClassCastException) {
-            throw ClassCastException((context.toString() + " must implement DialogListener"))
+            throw ClassCastException(("$context must implement DialogListener"))
         }
     }
 
-    private fun init(){
 
-        // PaintView
-        val metrics = DisplayMetrics()
-        requireActivity().windowManager.defaultDisplay.getMetrics(metrics)
-        paintContainer.init(metrics)
-
-        // Quita el color de los iconos de la barra de colores
-        navColor.itemIconTintList = null
-
-        // Listener de los NavigationView
-        navColor.setNavigationItemSelectedListener(this)
-
-        // Listener de los btns
-        showTools()
-        changeModeTextOrBrush()
-        changeModeTextColorOrErase()
-        changeColorNotes()
-
-        // Si se va a editar una nota se pega el contenido
-        if(note != null){
-            if(!note!!.contentNote!!.contains(".png")){
-                editText.setText(note!!.contentNote, TextView.BufferType.EDITABLE)
-                editText.setTextColor(note!!.textColor)
-                editText.setBackgroundColor(note!!.noteColor)
-            }else{
-
-                // TODO Arreglar Editar
-                btnTextOrBrush.setImageResource(R.drawable.ic_title_white_24dp)
-                btnTextColorOrEraser.setImageResource(R.drawable.ic_borrar_white_24dp)
-                btnNoteColor.setImageResource(R.drawable.ic_palette_white_24dp)
-
-                paintView.visibility = View.VISIBLE
-                textView.visibility = View.GONE
-
-                isText = false
-
-                var bitmap: Bitmap? = null
-
-                try {
-                    val fileInputStream = FileInputStream(note!!.contentNote)
-                    bitmap = BitmapFactory.decodeStream(fileInputStream)
-                } catch (io: IOException) {
-                    io.printStackTrace()
-                }
-
-                paintContainer.mBitmap = bitmap!!
-            }
-
-        }else{
-            // Muestra el dialogo para crear una primera nota
-            newNoteDialog = NewNoteDialog()
-            newNoteDialog.show(requireFragmentManager(), resources.getString(R.string.new_note))
-        }
-    }
 
     // Muestra u oculta las herramientas de edición
     private fun showTools() {

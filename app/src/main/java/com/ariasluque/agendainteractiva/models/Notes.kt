@@ -18,7 +18,15 @@ open class Notes : RealmObject {
     constructor()
 
     // Constructor de nota de texto
-    constructor(idNote : Int, titleNote : String, textNote : String, textColor : Int, noteColor : Int, creationDate : String, urlImage : String){
+    constructor(
+        idNote : Int,
+        titleNote : String,
+        textNote : String,
+        textColor : Int,
+        noteColor : Int,
+        creationDate : String,
+        urlImage : String
+    ){
         this.idNote = idNote
         this.titleNote = titleNote
         this.contentNote = textNote
