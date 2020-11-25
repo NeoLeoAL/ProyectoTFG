@@ -105,6 +105,7 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
         // Toma una instancia de Realm
         realm = Realm.getDefaultInstance()
 
+        /*
         // Borra toda la BD
         realm.executeTransaction { realm ->
             // Delete all matches
@@ -117,7 +118,7 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
         RealmConfiguration.Builder()
             .deleteRealmIfMigrationNeeded()
             .build()
-
+         */
     }
 
     // Añade o actualiza la nota en la BD
