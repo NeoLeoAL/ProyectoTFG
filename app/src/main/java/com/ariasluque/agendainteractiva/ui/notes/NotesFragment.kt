@@ -251,7 +251,7 @@ class NotesFragment : Fragment(), NavigationView.OnNavigationItemSelectedListene
         R.id.save_note_tool -> {
             paintContainer.isDrawingCacheEnabled = true // Permite guardar el bitmap
 
-            // Guarda el texto o la imagen
+            // Guarda el texto
             if (isText) mInteractionListener.onUpdateTextNoteListener(
                 editText.text.toString(),
                 currentColor,

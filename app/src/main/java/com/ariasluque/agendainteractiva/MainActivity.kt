@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
 
     // ------------------------ ON CREATE ------------------------ //
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(
         savedInstanceState: Bundle?
     ) {
@@ -190,10 +191,13 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
     // ------------------------ NOTE LISTENER ------------------------ //
 
     // Crea una primera nota con los datos básicos
+    @RequiresApi(Build.VERSION_CODES.M)
     @SuppressLint("SimpleDateFormat")
     override fun onNoteListener(
         title: String
     ) {
+        checkPermission(WRITE_STORAGE_PERMISSION)
+
         note = Notes()
         note.idNote = generateRandomId() // Id generado aleatoriamente
         note.titleNote = title
@@ -273,6 +277,7 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
     override fun onTaskListener(
         title: String
     ) {
+        checkPermission(WRITE_CALENDAR)
         task = Task()
         task.titleTask = title
 
@@ -335,6 +340,7 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
     }
 
     // Actualiza el titulo del task si ha sido actualizado en el calendario
+    @RequiresApi(Build.VERSION_CODES.M)
     @SuppressLint("Recycle")
     override fun onUpdateTask(){
         val taskBDList = realm.where<Task>().findAll() // Recoge todos los registros de la BD
@@ -501,24 +507,4 @@ class MainActivity : AppCompatActivity(), OnNotesInteractionListener, OnTasksInt
         return hasPermission
     }
 
-    // Pide los permisos necesarios
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-        if (REQUEST_CODE == requestCode) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                return
-            } else {
-                Toast.makeText(
-                    this,
-                    getString(R.string.permissions_not_granted) + Build.VERSION.SDK_INT,
-                    Toast.LENGTH_LONG
-                ).show()
-            }
-        } else {
-            super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        }
-    }
 }

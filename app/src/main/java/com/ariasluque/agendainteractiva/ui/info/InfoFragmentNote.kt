@@ -23,6 +23,8 @@ class InfoFragmentNote : Fragment() {
     private val DEF_ID_NOTE_PREFERENCE = 0
 
     private lateinit var mInteractionListener : OnNotesInteractionListener
+
+    private lateinit var realm : Realm
     private lateinit var note : Notes
 
     // ------------------------ ON CREATE ------------------------ //
@@ -37,7 +39,8 @@ class InfoFragmentNote : Fragment() {
 
         if(idNote != 0){
             // Busca el note con el id que se le ha pasado
-            note = Realm.getDefaultInstance().where<Notes>().equalTo("idNote", idNote).findFirst()!!
+            realm = Realm.getDefaultInstance()
+            note = realm.where<Notes>().equalTo("idNote", idNote).findFirst()!!
 
             // Cambia los datos del fagment
             changeViewData(view)
@@ -162,7 +165,7 @@ class InfoFragmentNote : Fragment() {
         }
 
         // Borra la nota de la BD
-        Realm.getDefaultInstance().executeTransaction {
+        realm.executeTransaction {
             note.deleteFromRealm()
         }
     }
